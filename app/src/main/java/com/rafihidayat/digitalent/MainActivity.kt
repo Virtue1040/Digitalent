@@ -28,7 +28,7 @@ class MainActivity : ComponentActivity() {
 
 @Preview(showBackground = true)
 @Composable
-fun MainActivityPreview() {
+private fun MainActivityPreview() {
     DigitalentTheme {
         SetupNavGraph()
     }
