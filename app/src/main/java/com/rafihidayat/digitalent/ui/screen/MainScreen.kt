@@ -10,9 +10,12 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
 import com.rafihidayat.digitalent.R
+import com.rafihidayat.digitalent.ui.theme.DigitalentTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -26,7 +29,6 @@ fun MainScreen(navController: NavHostController) {
                             id = R.string.app_name
                         )
                     )
-
                 },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primaryContainer,
@@ -42,4 +44,12 @@ fun MainScreen(navController: NavHostController) {
 @Composable
 private fun ScreenContent(modifier: Modifier, navController: NavController) {
 
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun MainScreenPreview() {
+    DigitalentTheme {
+        RegisterScreen(rememberNavController())
+    }
 }
