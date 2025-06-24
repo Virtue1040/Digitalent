@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Digitalent</string>
+    <string name="app_name_register">Digitalent Register</string>
+    <string name="app_name_login">Digitalent Login</string>
+
+    <!-- OutlinedTextbox Label -->
+    <string name="username">Username</string>
+    <string name="fullname">Full Name</string>
+    <string name="password">Password</string>
+    <string name="confirmedpassword">Confirm Password</string>
+
+    <!-- OutlinedButton Label -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
 </resources>
