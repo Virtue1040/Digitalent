@@ -16,7 +16,7 @@ import com.rafihidayat.digitalent.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun LoginScreen(navController: NavHostController) {
+fun RegisterScreen(navController: NavHostController) {
     Scaffold(
         topBar = {
             TopAppBar(
