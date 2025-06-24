@@ -21,7 +21,7 @@ abstract class DigitalentDb : RoomDatabase() {
                     instance = Room.databaseBuilder(
                         context.applicationContext,
                         DigitalentDb::class.java,
-                        "resep.db"
+                        "digitalent.db"
                     ).build()
                     INSTANCE = instance
                 }
