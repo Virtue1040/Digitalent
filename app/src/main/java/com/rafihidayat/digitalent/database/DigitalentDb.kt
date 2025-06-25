@@ -4,11 +4,13 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.rafihidayat.digitalent.model.Mahasiswa
 import com.rafihidayat.digitalent.model.User
 
-@Database(entities = [User::class], version = 1, exportSchema = false)
+@Database(entities = [User::class, Mahasiswa::class], version = 1, exportSchema = false)
 abstract class DigitalentDb : RoomDatabase() {
     abstract val dao: UserDao
+    abstract val dao2: MahasiswaDao
 
     companion object {
         @Volatile
@@ -21,7 +23,7 @@ abstract class DigitalentDb : RoomDatabase() {
                     instance = Room.databaseBuilder(
                         context.applicationContext,
                         DigitalentDb::class.java,
-                        "digitalent.db"
+                        "digitalent2.db"
                     ).build()
                     INSTANCE = instance
                 }
