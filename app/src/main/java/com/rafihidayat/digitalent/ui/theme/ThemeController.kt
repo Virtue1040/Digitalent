@@ -9,6 +9,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.platform.LocalContext
 import com.rafihidayat.digitalent.ui.theme.normal.DefaultTheme
 import com.rafihidayat.digitalent.ui.theme.red.RedTheme
+import com.rafihidayat.digitalent.util.SettingsDataStore
 
 @Composable
 fun ThemeController(
@@ -24,7 +25,7 @@ fun ThemeController(
     }
 
     val getLux = remember { mutableFloatStateOf(100f) }
-    val lightThreshold = 10f
+    val lightThreshold = 5f
 
     DisposableEffect(Unit) {
         val listener = object : SensorEventListener {
@@ -43,13 +44,19 @@ fun ThemeController(
 
     val isDarkTheme = getLux.floatValue < lightThreshold
 
-    if (isDarkTheme) {
-        RedTheme {
-            content()
+    val dataStore = SettingsDataStore(LocalContext.current)
+    val theme by dataStore.themeFlow.collectAsState(true)
+
+    when (theme) {
+        true -> {
+            DefaultTheme(isDarkTheme) {
+                content()
+            }
         }
-    } else {
-        DefaultTheme {
-            content()
+        false -> {
+            RedTheme(isDarkTheme) {
+                content()
+            }
         }
     }
 }

@@ -105,23 +105,23 @@ fun ListScreen(navController: NavHostController) {
                             tint = MaterialTheme.colorScheme.primary
                         )
                     }
-//                    IconButton(
-//                        onClick = {
-//                            CoroutineScope(Dispatchers.IO).launch {
-//                                settingDataStore.saveTheme(!theme)
-//                            }
-//                        }
-//                    ) {
-//                        Icon(
-//                            painter = painterResource(
-//                                R.drawable.baseline_color_lens_24
-//                            ),
-//                            contentDescription = stringResource(
-//                                R.string.change_theme
-//                            ),
-//                            tint = MaterialTheme.colorScheme.primary
-//                        )
-//                    }
+                    IconButton(
+                        onClick = {
+                            CoroutineScope(Dispatchers.IO).launch {
+                                settingDataStore.saveTheme(!theme)
+                            }
+                        }
+                    ) {
+                        Icon(
+                            painter = painterResource(
+                                R.drawable.baseline_color_lens_24
+                            ),
+                            contentDescription = stringResource(
+                                R.string.change_theme
+                            ),
+                            tint = MaterialTheme.colorScheme.primary
+                        )
+                    }
                 },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primaryContainer,
