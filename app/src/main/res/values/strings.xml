@@ -1,4 +1,8 @@
 <resources>
+    <string name="app_dashboard">Dashboard</string>
+    <string name="app_info">Information</string>
+    <string name="app_form">Form</string>
+    <string name="app_detail">Detail</string>
     <string name="app_name">Digitalent</string>
     <string name="app_name_register">Digitalent Register</string>
     <string name="app_name_login">Digitalent Login</string>
@@ -12,4 +16,56 @@
     <!-- OutlinedButton Label -->
     <string name="login">Login</string>
     <string name="register">Register</string>
+    <string name="back_login">Back to Login</string>
+    <string name="to_register">Don\'t have an account? \nRegister Here!</string>
+
+    <!-- MainScreen -->
+    <string name="logo_mahasiswa">Logo Mahasiswa</string>
+    <string name="showdata">Show Data</string>
+    <string name="inputdata">Input Data</string>
+    <string name="information">Information</string>
+    <string name="welcome">Welcome!, %s</string>
+
+    <string name="change_theme">Change Theme</string>
+    <string name="grid">Grid View</string>
+    <string name="list">List View</string>
+    <string name="back">Back</string>
+    <string name="logout">Logout</string>
+    <string name="info">Aplikasi Digitalent merupakan aplikasi yang digunakan untuk pendataan mahasiswa. User nantinya bis menambahkan, update, dan hapus data mahasiswa</string>
+
+    <!-- ListScreen -->
+    <string name="clickedit">Click to see Actions</string>
+    <string name="emptylist">Empty List</string>
+    <string name="adddata">Add Data</string>
+
+    <!-- FormScreen -->
+    <string name="savedata">Save Data</string>
+    <string name="data_nim">NIM</string>
+    <string name="data_fullname">FullName</string>
+    <string name="data_kelas">Kelas</string>
+
+    <!-- HapusDialog -->
+    <string name="delete_message">Are you sure you want to delete this?</string>
+    <string name="actions">Actions</string>
+    <string name="showdetail">Show Detail</string>
+    <string name="updatedata">Update Data</string>
+    <string name="deletedata">Delete Data</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Toast Confirmation Message -->
+    <string name="user_logined">User Successfuly Login</string>
+    <string name="user_registered">User Successfuly Registered</string>
+    <string name="data_created">Data Successfuly Created</string>
+    <string name="data_updated">Data Successfuly Updated</string>
+    <string name="data_deleted">Data Successfuly Deleted</string>
+
+    <!-- Exception Message -->
+    <string name="invalid_data">NIM, FullName, and Kelas cannot be empty</string>
+    <string name="invalid_register">Username, FullName, Password and Confirm Password cannot be empty</string>
+    <string name="invalid_register_wrong">Something went wrong, maybe username taken</string>
+    <string name="invalid_register_wrong_password">Password and Confirm Password not same</string>
+    <string name="invalid_register_password_validation">Password need to be atleast 8 Characters</string>
+    <string name="invalid_login">Username and Password cannot be empty</string>
+    <string name="invalid_login_wrong">Username or Password wrong</string>
 </resources>
