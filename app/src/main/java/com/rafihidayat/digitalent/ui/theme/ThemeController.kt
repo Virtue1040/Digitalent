@@ -25,7 +25,7 @@ fun ThemeController(
     }
 
     val getLux = remember { mutableFloatStateOf(100f) }
-    val lightThreshold = 5f
+    val lightThreshold = 10f
 
     DisposableEffect(Unit) {
         val listener = object : SensorEventListener {
