@@ -1,4 +1,4 @@
-package com.rafihidayat.digitalent.ui.theme
+package com.rafihidayat.digitalent.ui.theme.normal
 
 import androidx.compose.ui.graphics.Color
 

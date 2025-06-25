@@ -1,4 +1,4 @@
-package com.rafihidayat.digitalent.ui.theme
+package com.rafihidayat.digitalent.ui.theme.normal
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
